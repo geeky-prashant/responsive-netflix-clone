@@ -330,13 +330,14 @@
   }
   .movie-list-title {
     font-size: 22px;
+    margin-bottom: 0px;
   }
   .movie-list {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 130vh;
   }
   .movie-list-item {
     margin-right: 0px;
