@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+.navbar-container {
+  display: flex;
+  align-items: center;
+  padding: 0px 50px;
+  height: 100%;
+  color: #fff;
+}
+.logo-container {
+  flex: 1;
+  display: grid;
+  align-items: center;
+}
+.logo {
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+.menu-container {
+  flex: 6;
+  display: grid;
+  align-items: center;
+}
+.menu-list {
+  display: flex;
+  list-style: none;
+  cursor: pointer;
+}
+.menu-list-item {
+  margin: 30px;
+  transition: all 0.3s ease-in-out;
+}
+.menu-list-item:hover {
+  transform: scale(0.8);
+}
+.menu-list-item.active {
+  font-weight: bold;
+}
+.profile-container {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.profile-picture {
+  width: 10%;
+  height: 10%;
+  cursor: pointer;
+  object-fit: cover;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+.profile-picture:hover {
+  transform: scale(0.8);
+}
+.profile-text-container {
+  margin: 0 15px;
+}
+.toggle {
+  width: 40px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+.toggle-icon {
+  color: goldenrod;
+  font-size: 13px;
+}
+.toggle-ball {
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  position: absolute;
+  right: 1px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.sidebar {
+  width: 50px;
+  height: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 60px;
+}
+.left-menu-icon {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.left-menu-icon:hover {
+  transform: scale(0.8);
+}
+.container {
+  background-color: #151515;
+  min-height: calc(100vh - 50px);
+  color: #fff;
+}
+.content-container {
+  margin-left: 50px;
+}
+.featured-content {
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.featured-content:nth-last-child(2) {
+  height: 80vh;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.featured-title {
+  width: 500px;
+  text-align: center;
+  line-height: 1;
+  color: #fff;
+  font-size: 45px;
+  font-family: "Poppins", sans-serif;
+}
+.featured-desc {
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 20px;
+}
+.featured-button {
+  background-color: #f40612;
+  color: #fff;
+  font-size: 20px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.featured-button:hover {
+  transform: scale(0.8);
+}
+.btn-icon {
+  margin-left: 5px;
+}
+.movie-list-container {
+  padding: 0 20px;
+}
+.movie-list-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: -20px;
+}
+.movie-list-title {
+  margin-top: 40px;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+}
+.movie-list {
+  display: flex;
+  align-items: center;
+  height: 250px;
+}
+.movie-list-item {
+  margin-right: 20px;
+  position: relative;
+}
+.movie-list-item-img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.movie-list-item:hover .movie-list-item-img {
+  transform: scale(0.9);
+  opacity: 0.5;
+}
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button {
+  opacity: 1;
+}
+.movie-list-item-title {
+  background-color: #151515;
+  padding: 0 12px;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 15%;
+  left: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.movie-list-item-desc {
+  background-color: #151515;
+  padding: 12px;
+  font-size: 14px;
+  position: absolute;
+  top: 32%;
+  left: 25px;
+  width: 250px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.movie-list-item-button {
+  padding: 8px 10px;
+  background-color: #c70913;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  bottom: 18%;
+  left: 25px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Toggle Dark Mode  */
+.container.active {
+  background-color: white;
+}
+.movie-list-title.active {
+  color: #151515;
+}
+.navbar-container.active {
+  background-color: #fff;
+  color: #151515;
+}
+.toggle.active {
+  background-color: #151515;
+}
+.toggle-ball.active {
+  background-color: #fff;
+  transform: translateX(-20px);
+}
+.sidebar.active {
+  background-color: #fff;
+}
+.left-menu-icon.active {
+  color: #151515;
+}
+
+/* Responsive Mobile Friendly  */
+@media screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+  .sidebar.active {
+    display: none;
+  }
+  .menu-list {
+    display: none;
+  }
+  .navbar-container {
+    padding: 0 15px;
+  }
+  .profile-picture {
+    display: none;
+  }
+  .profile-text {
+    display: none;
+  }
+  .fa-solid.fa-caret-down {
+    display: none;
+  }
+  .logo {
+    width: 80px;
+    height: 25px;
+  }
+  .container {
+    min-height: calc(450vh - 50px);
+  }
+  .content-container {
+    margin-left: 0px;
+  }
+  .featured-content {
+    height: 50vh;
+  }
+  .featured-content:nth-last-child(2) {
+    height: 50vh;
+  }
+  .featured-title {
+    width: 300px;
+    line-height: 1.2;
+    font-size: 25px;
+    text-align: center;
+  }
+  .featured-desc {
+    font-size: 20px;
+  }
+  .featured-button {
+    font-size: 15px;
+    padding: 12px 20px;
+  }
+  .movie-list-container {
+    padding: 0 15px;
+  }
+  .movie-list-title {
+    font-size: 22px;
+  }
+  .movie-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .movie-list-item {
+    margin-right: 0px;
+  }
+  .movie-list-item-img {
+    margin: 10px;
+    width: 360px;
+    height: 200px;
+    border-radius: 15px;
+  }
+}
