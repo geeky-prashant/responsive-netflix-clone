@@ -9,7 +9,7 @@
 
   <h2 align="center">Responsive Movie Website</h2>
 
-  In this project, I have created Responsive Movie Website, <br />The project is built using HTML5, CSS3 & JavaScript.
+  In this project, I have created Responsive Movie Website, The project is built using HTML5, CSS3 & JavaScript.
 
   <a href="https://geeky-prashant.github.io/responsive-movie-website/"><strong>➥ Live Demo</strong></a>
 
