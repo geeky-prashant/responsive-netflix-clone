@@ -7,7 +7,7 @@
  
   <br />
 
-  <h2 align="center">Responsive Netflix Website</h2>
+  <h2 align="center">Responsive Netflix Clone</h2>
 
   In this project, I have created Responsive Netflix Clone, The project is built using HTML5, CSS3 & JavaScript.
 
